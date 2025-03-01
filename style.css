@@ -1,0 +1,247 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.header {
+  background-color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.logo span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.check-icon {
+  color: white;
+  margin-right: 6px;
+}
+
+.notification-number {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.color-wheel-icon {
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.color-wheel {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: linear-gradient(to right, 
+      red, orange, yellow, green, blue, indigo, violet, red); /* Color wheel gradient */
+  position: relative;
+}
+
+.color-wheel::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: white; /* Center white dot */
+}
+
+main {
+  margin-top: 20px;
+  border-radius: 10px;
+  
+}
+
+.task-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.task-assigned{
+    background-color: #d8eafe;
+    color: black;
+    border-radius: 10px;
+    padding-left: 30px;
+    width: 200px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    border-radius: 10px;
+} 
+.discover{
+  background-image: linear-gradient(to right, #3752FD , #aab5ff);
+  font-size: 22px;
+  color: #fff;
+  border-radius: 10px;
+  padding-left: 30px;
+  width: 400px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+ .date {
+  background-color: #d8eafe;
+  color: black;
+  border-radius: 10px;
+  padding-left: 30px;
+  width: 200px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.task-icon{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+ .discover-icon, .date-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.task-count {
+  font-size: 1.4rem;
+}
+.main-section{
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+}
+.main-subsection{
+  background: #ffff;
+  width: 75%;
+}
+
+.subsection{
+  width: 25%;
+}
+
+.activity-log {
+  width: 90%;
+  height: 850px;
+  background-color: #fff;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-log h2 {
+  font-size: 14px;
+}
+
+.activity-icon{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-top: 12px;
+}
+
+.clear-history {
+  background-color: #3752FD;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card {
+  background-color: #d2e1fc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.completed {
+  background-color: #3752FD;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}

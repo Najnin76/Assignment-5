@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Navigate to second page when Discover button is clicked
+    let discoverButton = document.querySelector(".discover");
+    if (discoverButton) {
+        discoverButton.addEventListener("click", function () {
+            window.location.href = "index2.html"; // Redirect to second page
+        });
+    }
+});
+</script>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div>
+                    <img src="./images/Vector (2).png" alt="">
+                </div>
+                <div style="font-size: 25px; font-weight: bold;"><span style="color: gray;">Dev</span>Board</div>
+            </div>
+            <div class="icons">
+                <div class="notification-icon">
+                    <span class="check-icon"><img src="./images/Vector.png" alt=""></span>
+                    <span class="notification-number">23</span>
+                </div>
+                <div class="color-wheel-icon">
+                    <div class="color-wheel"></div>
+                </div>
+            </div>
+        </div>
+        <main class=" main-section">
+            <div class="main-subsection">
+            <section class="task-section">
+                <div class="task-assigned">
+                    <div class="task-icon">
+                        <img src="./images/Vector.png" alt="">
+                    </div>
+                    <div>
+                        <p>Task Assigned</p>
+                        <p class="task-count">06</p>
+                    </div>
+                </div>
+                <div class="discover">
+                    <div class="discover-icon">
+                        <img src="./images/Group (2).png" alt="">
+                    </div>
+                    <p>Discover Something <br> New Today!</p>
+                </div>
+                <div class="date">
+                    <div class="date-icon">
+                        <img src="./images/Group_13-removebg-preview.png" alt="">
+                    </div>
+                    <p style="font-size: 1.1rem;"> <span id="currentDate"></span></p>
+                </div>
+            </section>
+            <section class="cards">
+                <div class="card">
+                    <button style="border: white; border: none;border-radius: 5px; height: 40px; margin-bottom: 20px;">ShopEase </button>
+                    <h3>Fix Mobile Button Issue</h3>
+                    <div style="background: white; border-radius: 5px; height: 100px; padding-top: 1px; padding-left: 10px;">
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>Deadline <br> 21 March 2025</p>
+                        <button class="completed">Completed</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <button style="border: white; border: none;border-radius: 5px; height: 40px; margin-bottom: 20px;">CloudSync</button>
+                    <h3>Add Dark Mode</h3>
+                    <div style="background: white; border-radius: 5px; height: 100px; padding-top: 1px; padding-left: 10px;">
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>Deadline <br> 25 March 2025</p>
+                        <button class="completed">Completed</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <button style="border: white; border: none;border-radius: 5px; height: 40px; margin-bottom: 20px;">SwiftPay</button>
+                    <h3>Optimize  Home page </h3>
+                    <div style="background: white; border-radius: 5px; height: 100px; padding-top: 1px; padding-left: 10px;">
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>Deadline <br> 31 March 2025</p>
+                        <button class="completed">Completed</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <button style="border: white; border: none;border-radius: 5px; height: 40px; margin-bottom: 20px;">Meta</button>
+                    <h3>Add new emoji 🤲</h3>
+                    <div style="background: white; border-radius: 5px; height: 100px; padding-top: 1px; padding-left: 10px;">
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>Deadline <br> 21 March 2025</p>
+                        <button class="completed">Completed</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <button style="border: white; border: none;border-radius: 5px; height: 40px; margin-bottom: 20px;">Google LLC</button>
+                    <h3>Integrate OpenAI API </h3>
+                    <div style="background: white; border-radius: 5px; height: 100px; padding-top: 1px; padding-left: 10px;">
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>Deadline <br> 01 April 2025</p>
+                        <button class="completed">Completed</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <button style="border: white; border: none;border-radius: 5px; height: 40px; margin-bottom: 20px;">Glassdoar</button>
+                    <h3>Improve Job searching </h3>
+                    <div style="background: white; border-radius: 5px; height: 100px; padding-top: 1px; padding-left: 10px;">
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>Deadline <br> 5 May 2025</p>
+                        <button class="completed">Completed</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="subsection">
+            <section class="activity-log">
+                <div style="display: flex; gap: 10px;">
+                    <img class="activity-icon" src="./images/fi-sr-time-past.png" alt="">
+                    <h2>Activity Log</h2>
+                </div>
+                <button class="clear-history" id="clearHistoryBtn">Clear History</button>
+                <hr style="height: 0.2px; width: 100%;">
+            </section>
+        </div>
+        </main>
+    </div>
+    <script src="DevBoard.js"></script>
+</body>
+</html>

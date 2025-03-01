@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    let backButton = document.querySelector(".icons button");
+    if (backButton) {
+        backButton.addEventListener("click", function () {
+            window.location.href = "index.html"; 
+        });
+    }
+});
+
+</script>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div>
+                    <img src="./images/Vector (2).png" alt="">
+                </div>
+                <div style="font-size: 25px; font-weight: bold;"><span style="color: gray;">Dev</span>Board</div>
+            </div>
+            <div class="icons">
+            <button> Back to Desk</button>
+            </div>
+        </div>
+
+   
+    <div>
+        <h2 style="display: flex; justify-content: center; margin-top: 30px;">Blog</h2>
+        <section id="questions" class="questions-section">
+    
+            <!-- Question 1 -->
+            <div class="question">
+                <h4>Question-1: What are the different ways to select an element in the DOM?</h4>
+                <p class="answer">There are several ways to select elements in the DOM using JavaScript:  <br>
+                    1. `getElementById("id")` – Selects an element by its ID.  <br>
+                    2. `getElementsByClassName("class")` – Selects elements by class name (returns a collection).  <br>
+                    3. `getElementsByTagName("tag")` – Selects elements by tag name (collection).  <br>
+                    4. `querySelector("selector")` – Selects the first matching element using CSS selectors.  <br>
+                    5. `querySelectorAll("selector")` – Selects all matching elements (NodeList).</p>
+            </div>
+    
+            <!-- Question 2 -->
+            <div class="question">
+                <h4>Question-2: What is the difference between innerHTML, innerText, and textContent ?</h4>
+                <p class="answer"> Difference between `innerHTML`, `innerText`, and `textContent`:  <br>
+                    1. `innerHTML` – Gets or sets HTML content, including tags.  <br>
+                    2. `innerText` – Gets or sets only visible text, ignoring hidden elements. <br> 
+                    3. `textContent`– Gets or sets all text, including hidden content, without parsing HTML.</p>
+            </div>
+    
+            <!-- Question 3 -->
+            <div class="question">
+                <h4>Question-3: What is event delegation in the DOM?</h4>
+                <p class="answer">Event delegation is a technique where a single parent element handles events for 
+                    its child elements using event bubbling. Instead of adding event listeners to multiple child elements, you attach one listene
+                    r to the parent and use event.target to identify the clicked element.</p>
+            </div>
+    
+            <!-- Question 4 -->
+            <div class="question">
+                <h4>Question-4: What is event bubbling in the DOM?</h4>
+                <p class="answer">Event bubbling is a process where an event starts from the target element and
+                     propagates up to its parent elements in the DOM. <br>
+                    Example: <br> If a button inside a div is clicked, the event first triggers on the button, then bubbles up to the div, and further up to the <body>.</p>
+            </div>
+    
+            <!-- Question 5 -->
+            <div class="question">
+                <h4>Question-5: How do you create, add, and remove elements using JavaScript?</h4>
+                <p class="answer">Creating, Adding, and Removing Elements in JavaScript: <br> let newDiv = document.createElement("div"); <br> newDiv.textContent = "Hello!"; <br> document.body.appendChild(newDiv); 
+                    newDiv.remove(); </p>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
+
