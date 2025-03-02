@@ -9,7 +9,6 @@ function formatDate() {
 document.getElementById('currentDate').textContent = formatDate();
 
 
-  
     //Alert//
 
     document.addEventListener("DOMContentLoaded", function () {
