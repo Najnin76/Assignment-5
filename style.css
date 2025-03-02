@@ -56,7 +56,7 @@ body {
 
 .notification-number {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .color-wheel-icon {
@@ -158,6 +158,7 @@ main {
 
 .task-count {
   font-size: 1.4rem;
+  font-weight: bold;
 }
 .main-section{
   display: flex;
