@@ -8,16 +8,35 @@
 </head>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    // Navigate to second page when Discover button is clicked
-    let discoverButton = document.querySelector(".discover");
-    if (discoverButton) {
-        discoverButton.addEventListener("click", function () {
-            window.location.href = "index2.html"; // Redirect to second page
-        });
-    }
-});
-</script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Navigate to second page when Discover button is clicked
+        let discoverButton = document.querySelector(".discover");
+        if (discoverButton) {
+            discoverButton.addEventListener("click", function () {
+                window.location.href = "index2.html"; // Redirect to second page
+            });
+        }
+    
+        // Function to generate a random color
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    
+        // Change background color when color-wheel icon is clicked
+        let colorWheelIcon = document.querySelector(".color-wheel-icon");
+        if (colorWheelIcon) {
+            colorWheelIcon.addEventListener("click", function () {
+                document.body.style.backgroundColor = getRandomColor(); // Change body background color
+            });
+        }
+    });
+    </script>
+
 <body>
     <div class="container">
         <div class="header">

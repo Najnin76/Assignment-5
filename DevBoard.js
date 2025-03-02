@@ -1,24 +1,4 @@
-  //Baground Color//
-
- function changeBackgroundColor() {
- const colors = ["#ff5733", "#33ff57", "#3357ff", "#f4ff33", "#ff33f4", "#33f4ff"];
-     const randomColor = colors[Math.floor(Math.random() * colors.length)];
-      document.body.style.backgroundColor = randomColor;
-    }
-     document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector(".color-wheel-icon").addEventListener("click", changeBackgroundColor);
-    s});
-
-
-    function changeBackgroundColor() {
-        const colors = ["#ff5733", "#33ff57", "#3357ff", "#f4ff33", "#ff33f4", "#33f4ff"];
-        const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        document.body.style.backgroundColor = randomColor;
-    }
-
-
-
- // Function to format the date as "Day, Month Day, Year"
+// Function to format the date as "Day, Month Day, Year"
 
 function formatDate() {
     const currentDate = new Date();
